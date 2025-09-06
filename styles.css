@@ -132,6 +132,8 @@ h3 { font-size: 1.2rem; font-weight: 600; }
 .skill-block h3 { margin-bottom: 8px; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
 .chips li { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); padding: 6px 10px; border-radius: 999px; font-size: .9rem; color: var(--text); }
+.about-highlights { margin-top: 12px; }
+.about-highlights li { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
 
 /* Certifications */
 .cert-list { margin-top: 8px; color: var(--muted); }
