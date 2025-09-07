@@ -1,20 +1,51 @@
-# Hanz Hendrick Lacsi — One-Page Portfolio
+# Hanz Hendrick Lacsi — Portfolio
 
-A modern, responsive one-page portfolio built with HTML, CSS, and JavaScript. It includes sections for Home, About, Projects, Skills, Certifications, and Contact, with smooth scrolling and a fixed navigation bar.
+Your portfolio’s cover letter. This repo hosts a modern one-page site that introduces who you are, what you’ve built, and how to reach you.
 
-## Features
-- Sticky, translucent navbar with smooth scrolling
-- Responsive layout (cards and grids)
-- Accessible form with client-side validation (mailto fallback)
-- Subtle hover effects and active nav highlighting
-- Google Fonts (Poppins) and professional blue/navy palette
+Live demo (GitHub Pages): https://exiv1017.github.io/Portfolio/
 
-## Getting Started
-Just open `index.html` in your browser.
+## About
+IT student at Laguna State Polytechnic University, majoring in Network Administration. Interests include network security and intrusion detection, Linux administration, and cloud platforms. Open to Internship/OJT (Cloud), on-site or hybrid. Locations: Laguna • Manila.
 
-Optionally, serve over a local web server.
+## Highlights
+- Clean one-page UX with sticky header and smooth scrolling
+- Professional green theme with subtle decorative shapes (blobs, dots, rings, lines)
+- Responsive grids and cards with hover accents
+- Project carousels (landscape + portrait) with arrows and dots
+- PulseSentry split layout (media + description side-by-side on desktop)
+- Contact form powered by FormSubmit (AJAX, honeypot, status messages, graceful fallback)
+- Downloadable Resume and CV buttons
+- Social links: Facebook, Instagram, GitHub, LinkedIn
 
-### Windows (PowerShell)
+## Projects (quick tour)
+- NIDStoKnow — Network Intrusion Detection System learning/simulation platform using a Cowrie honeypot; safe, hands-on exploration of real-world attack patterns.
+- NetMasteryHub — Web-based interactive learning modules and scenarios for Network Administration topics.
+- PulseSentry — IoT-based silent alarm smartwatch for hearing‑impaired users; vibration alerts, quick messaging, and real-time location tracking.
+
+## Skills
+- Networking: TCP/IP, Routing & Switching, VLANs, Subnetting, OSPF, DHCP/DNS, Wireshark
+- Programming: Python, C#, Bash
+- Web: HTML, CSS, JavaScript, Responsive Design
+- Tools: Packet Tracer, Linux, Git, VS Code, Figma
+
+## Certifications
+- DICT — Cyber 101 (PDF included)
+- DICT — Cyber Tools (PDF included)
+- DICT — Data Privacy Awareness (PDF included)
+- EC‑Council — SQL Injection Attacks (image included)
+
+## Repository structure
+- `index.html` — Page content and sections (Home, About, Projects, Skills, Certifications, Contact)
+- `styles.css` — Theme, layout, and decorative backgrounds
+- `script.js` — Smooth scrolling, active nav, carousels, and FormSubmit handling
+- `Image/` — Project and profile images
+- `LicensesandCertifications/` — Certificates (PDF/JPG)
+- `Resume-Lacsi.pdf`, `CV-Lacsi.pdf` — Downloadable documents
+
+## Run locally
+Open `index.html` directly, or serve it for a cleaner dev experience.
+
+Windows (PowerShell):
 ```powershell
 # If you have Python installed
 python -m http.server 5500
@@ -22,9 +53,12 @@ python -m http.server 5500
 ```
 
 ## Customize
-- Edit text and sections in `index.html`.
-- Tweak colors and layout in `styles.css`.
-- Adjust behavior in `script.js`.
+- Edit text/content in `index.html` (About, Projects, Skills, Certifications, Contact).
+- Colors/spacing/components in `styles.css`.
+- Behavior (carousels, form) in `script.js`.
+- Replace `Resume-Lacsi.pdf` and/or `CV-Lacsi.pdf` to update downloads (keep filenames or update the hrefs in `index.html`).
 
-## Notes
-- The contact form uses a `mailto:` link to open your email client. For real submissions, connect it to a backend or a service like Formspree.
+## Contact
+Email: hanzlacsi@gmail.com
+
+The contact form sends via FormSubmit. On first submission, confirm the activation email from FormSubmit to start receiving messages.
