@@ -45,7 +45,7 @@ h1, h2, h3 { line-height: 1.2; margin: 0 0 12px; }
 h1 { font-size: clamp(2rem, 2.8vw + 1rem, 3rem); font-weight: 700; }
 h2 { font-size: clamp(1.6rem, 1.4vw + 1rem, 2.2rem); font-weight: 600; }
 h3 { font-size: 1.2rem; font-weight: 600; }
-.lead { color: var(--muted); font-size: 1.05rem; }
+.lead { color: var(--muted); font-size: 1.05rem; text-align: justify; hyphens: auto; }
 .subtitle { color: var(--muted); margin-top: 4px; }
 .eyebrow { color: var(--primary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; font-size: .85rem; }
 .accent { color: var(--primary); }
