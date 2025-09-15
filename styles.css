@@ -178,6 +178,13 @@ h3 { font-size: 1.2rem; font-weight: 600; }
 }
 /* Keep button row pinned to bottom for equal-height cards */
 .cert-card .actions { margin-top: auto; }
+/* Make the View Certificate button take full width */
+.cert-card .actions .btn { 
+  width: 100%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
 
 /* Contact */
 .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
