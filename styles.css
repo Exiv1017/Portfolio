@@ -183,38 +183,17 @@ h2::after {
 .cert-card:hover::before {
   opacity: 1;
 }
-/* Top-stripe color per issuer */
-.cert-card:has(.badge-itst)::before  { background: #3b82f6; }
-.cert-card:has(.badge-aws)::before   { background: #f59e0b; }
-.cert-card:has(.badge-ibm)::before   { background: #6366f1; }
-.cert-card:has(.badge-cisco)::before { background: #06b6d4; }
-.cert-card:has(.badge-dict)::before  { background: #10b981; }
-.cert-card:has(.badge-ec)::before    { background: #ef4444; }
-.cert-card:has(.badge-js)::before    { background: #8b5cf6; }
-.cert-badge {
+.cert-logo {
   width: 56px;
   height: 56px;
   border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: .85rem;
-  letter-spacing: 0.04em;
-  color: #fff;
-  background: var(--badge-color, var(--primary));
+  object-fit: contain;
   margin-bottom: 14px;
   flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background: rgba(255,255,255,0.06);
+  padding: 6px;
+  border: 1px solid rgba(255,255,255,0.08);
 }
-/* Badge color variants */
-.cert-badge.badge-itst   { --badge-color: #3b82f6; }
-.cert-badge.badge-aws    { --badge-color: #f59e0b; }
-.cert-badge.badge-ibm    { --badge-color: #6366f1; }
-.cert-badge.badge-cisco  { --badge-color: #06b6d4; }
-.cert-badge.badge-dict   { --badge-color: #10b981; }
-.cert-badge.badge-ec     { --badge-color: #ef4444; }
-.cert-badge.badge-js     { --badge-color: #8b5cf6; }
 .cert-body { flex: 1; }
 .cert-tag {
   display: inline-block;
@@ -401,6 +380,38 @@ h2::after {
 
 /* Accessibility helpers */
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+/* Back to top */
+.back-to-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 99;
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: var(--card);
+  color: var(--primary);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity .3s ease, visibility .3s ease, transform .3s ease, background .2s ease, border-color .2s ease;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.back-to-top:hover {
+  background: var(--primary);
+  color: #0b1a12;
+  border-color: var(--primary);
+}
 
 /* Reveal animations */
 [data-reveal] {
