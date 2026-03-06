@@ -206,3 +206,21 @@ function initCarousel(root) {
 }
 
 document.querySelectorAll('.carousel').forEach(initCarousel);
+
+// Reveal-on-scroll animation for [data-reveal] elements
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.1 }
+);
+
+document.querySelectorAll('[data-reveal]').forEach((el, i) => {
+  el.style.transitionDelay = `${i % 3 * 80}ms`;
+  revealObserver.observe(el);
+});
